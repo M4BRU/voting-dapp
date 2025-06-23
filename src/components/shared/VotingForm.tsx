@@ -109,7 +109,7 @@ export default function VotingForm() {
       const proposalEvents = await publicClient.getLogs({
         address: votingAddress as Address,
         event: parseAbiItem("event ProposalRegistered(uint256 proposalId)"),
-        fromBlock: 0n,
+        fromBlock: 8611631n,
         toBlock: "latest",
       });
 
@@ -158,7 +158,7 @@ export default function VotingForm() {
       const voterRegisteredEvents = await publicClient.getLogs({
         address: votingAddress as Address,
         event: parseAbiItem("event VoterRegistered(address voterAddress)"),
-        fromBlock: 0n,
+        fromBlock: 8611631n,
         toBlock: "latest",
       });
 
@@ -167,21 +167,21 @@ export default function VotingForm() {
         event: parseAbiItem(
           "event WorkflowStatusChange(uint8 previousStatus, uint8 newStatus)"
         ),
-        fromBlock: 0n,
+        fromBlock: 8611631n,
         toBlock: "latest",
       });
 
       const proposalRegisteredEvents = await publicClient.getLogs({
         address: votingAddress as Address,
         event: parseAbiItem("event ProposalRegistered(uint256 proposalId)"),
-        fromBlock: 0n,
+        fromBlock: 8611631n,
         toBlock: "latest",
       });
 
       const votedEvents = await publicClient.getLogs({
         address: votingAddress as Address,
         event: parseAbiItem("event Voted(address voter, uint proposalId)"),
-        fromBlock: 0n,
+        fromBlock: 8611631n,
         toBlock: "latest",
       });
 
