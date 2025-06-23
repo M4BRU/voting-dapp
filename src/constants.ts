@@ -7,7 +7,7 @@ interface ContractsConfig {
 
 export const chainsToVoting: ContractsConfig = {
   11155111: {
-    voting: "0xd9f4EfbC5F88481E400849C79DD64C9303552913",
+    voting: "0x77BE0BaAc99e2c40bb1FB7E271ACfd22B4E695a0",
     no_check: null,
   },
   31337: {
